@@ -1,6 +1,6 @@
 {
   "dirs": {
-    "headers": [],
+    "headers": ["./inc"],
     "sources": ["./src"]
   },
   "libs": [],
