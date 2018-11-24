@@ -1,0 +1,9 @@
+{
+  "dirs": {
+    "headers": [],
+    "sources": ["./src"]
+  },
+  "libs": [],
+  "out": "bin/find",
+  "flags": ["-std=c++11"]
+}
