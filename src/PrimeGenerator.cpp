@@ -1,3 +1,4 @@
+#include <cmath>
 #include <fstream>
 #include <iostream>
 #include <sstream>
@@ -36,6 +37,9 @@ void PrimeGenerator::save() {
 
 bool PrimeGenerator::isPrime(Prime value) {
   for (unsigned int i = 0; i < this->primes.size(); i++) {
+    if (i > sqrt(value)) {
+      return true;
+    }
     if (value % this->primes[i] == 0) {
       return false;
     }
