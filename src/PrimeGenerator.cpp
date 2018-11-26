@@ -7,7 +7,7 @@ PrimeGenerator::PrimeGenerator() {
   }
 }
 
-bool PrimeGenerator::isPrime(Prime value) {
+bool PrimeGenerator::is_prime(Prime value) {
   for (unsigned int i = 0; i < this->primes.size(); i++) {
     if (i > sqrt(value)) {
       return true;
@@ -21,7 +21,7 @@ bool PrimeGenerator::isPrime(Prime value) {
 
 Prime PrimeGenerator::next() {
   Prime i = this->primes.back() + 1;
-  while (!this->isPrime(i)) {
+  while (!this->is_prime(i)) {
     i++;
   }
   this->primes.push_back(i);

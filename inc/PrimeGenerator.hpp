@@ -10,7 +10,7 @@ public:
   PrimeGenerator();
   std::vector<Prime> primes;
   void save();
-  bool isPrime(Prime value);
+  bool is_prime(Prime value);
   Prime next();
 private:
   bool load();
