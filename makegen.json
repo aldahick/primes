@@ -3,7 +3,7 @@
     "headers": ["./inc"],
     "sources": ["./src"]
   },
-  "libs": [],
+  "libs": ["stdc++fs"],
   "out": "bin/find",
-  "flags": ["-std=c++11"]
+  "flags": ["-std=c++17"]
 }
