@@ -19,4 +19,5 @@ int convert_v1() {
   infile.close();
   log("Loaded " + std::to_string(generator.primes.size()) + " primes.");
   generator.save();
+  return 0;
 }
