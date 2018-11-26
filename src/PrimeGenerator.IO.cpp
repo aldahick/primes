@@ -13,8 +13,13 @@ bool PrimeGenerator::load() {
   if (!fs::is_directory("data")) {
     return false;
   }
+  std::vector<long> data_indices;
   for (auto& p : fs::directory_iterator("data")) {
-    std::ifstream stream("data/" + p.path().filename().string());
+    data_indices.push_back(stoi(p.path().filename().string()));
+  }
+  std::sort(data_indices.begin(), data_indices.end());
+  for (long index : data_indices) {
+    std::ifstream stream("data/" + std::to_string(index));
     std::string line;
     while (std::getline(stream, line)) {
       Prime prime;
