@@ -14,6 +14,7 @@ public:
   Prime next();
 private:
   bool load();
+  int last_save_index;
 };
 
 #endif
