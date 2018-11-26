@@ -1,3 +1,4 @@
+#include <algorithm>
 #include <experimental/filesystem>
 #include <fstream>
 #include <iostream>
